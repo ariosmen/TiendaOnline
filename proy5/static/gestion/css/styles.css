@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+    padding-bottom: 5em;
+    background: url(../img/tienda.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* .body_principal {
+    min-height: 100vh;
+    background: url(../img/tienda.jpg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.5;
+} */
+
+.barra {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    background-color: #202020;
+}
+
+.logo {
+    width: 100px;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    gap: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.admin {
+    width: 100px;
+    padding: 0px 25px;
+}
+
+.active {
+    color: orangered;
+}
+

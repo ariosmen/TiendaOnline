@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{%load static%}
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="{% static 'gestion/css/styles.css' %}">
+</head>
+<body>
+    <nav class="barra">
+        <a href="{% url 'home' %}"><img src="{% static 'gestion/img/logoB.png' %}" alt="" class="logo"></a>
+        <ul>
+            <li><a href="{% url 'home' %}" class="{% if request.path == '/' %}active{%endif%}">Home</a></li>
+            <li><a href="{% url 'servicios' %}" class="{% if request.path == '/servicios' %}active{%endif%}">Servicios</a></li>
+            <li><a href="{% url 'tienda' %}" class="{% if request.path == '/tienda' %}active{%endif%}">Tienda</a></li>
+            <li><a href="{% url 'blog' %}" class="{% if request.path == '/blog' %}active{%endif%}">Blog</a></li>
+            <li><a href="{% url 'contacto' %}" class="{% if request.path == '/contacto' %}active{%endif%}">Contacto</a></li>
+        </ul>
+        <div class="admin">
+            <a href="/admin">Admin</a>
+        </div>
+    </nav>
+</body>
+</html>

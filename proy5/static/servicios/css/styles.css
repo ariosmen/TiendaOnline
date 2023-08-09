@@ -1,0 +1,18 @@
+.container {
+    display: flex;   
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.img {
+    width: 550px;
+}
+
+.caja-texto {
+    padding: 40px;
+    width: 350px;
+    background-color: rgb(5, 65, 5);
+    color: #fff;
+}

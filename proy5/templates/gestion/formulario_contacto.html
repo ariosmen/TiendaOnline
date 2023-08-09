@@ -1,0 +1,16 @@
+{% extends 'gestion/base.html' %}
+
+{% block title %}Formulario de Contacto{%endblock%}
+
+{% block content %}
+    <section>
+        <h1>Contáctenos</h1>
+        {% if form.errors %}
+        <p>Error al cargar</p>
+        {% endif %}
+        <form action="" method="post">{% csrf_token %}
+            {{form.as_p}}
+            <input type="submit" value="Enviar" class="input">
+        </form>
+    </section>
+{% endblock %}
