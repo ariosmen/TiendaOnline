@@ -1,0 +1,31 @@
+{% extends 'gestion/base.html' %}
+
+{% block title %}Blog{%endblock%}
+
+{% block content %}
+
+    <div class="categorias">
+        <h3>Categorias: 
+            {%for categoria in categorias %}
+                <a href="categoria/{{categoria.id}}">{{categoria.nombre}}</a>
+            {% endfor %}
+        </h3>
+    </div>
+
+    {% for post in posts %}
+    <div class="container">
+        <img src="{{post.imagen.url}}" alt="" class="img">
+        <div class="caja-texto">
+            <h1>{{post.titulo}}</h1>
+            <p>{{post.contenido}}</p>
+            <div class="autor">
+                <p>Autor: {{post.autor}}</p>
+            </div>
+
+        </div>
+    </div>
+    {% endfor %}
+    
+    
+
+{% endblock %}

@@ -11,8 +11,35 @@
 }
 
 .caja-texto {
-    padding: 40px;
+    height: 150px;
+    padding: 20px;
     width: 350px;
     background-color: rgb(5, 65, 5);
     color: #fff;
+    text-align: center;
+}
+
+.autor {
+    display: flex;
+    justify-content: left;
+}
+
+.categorias {
+    width: 50%;
+    color: #202020;
+    text-align: center;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.title-categoria {
+    font-size: 20px;
+    margin-top: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+}
+
+.nombre_categoria:hover {
+    color: red;
 }
