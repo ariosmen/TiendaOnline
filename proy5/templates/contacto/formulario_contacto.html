@@ -3,14 +3,24 @@
 {% block title %}Formulario de Contacto{%endblock%}
 
 {% block content %}
-    <section>
+    <div class="container">
+        
         <h1>Contáctenos</h1>
+        
         {% if form.errors %}
-        <p>Error al cargar</p>
+            <p>Error al cargar</p>
         {% endif %}
-        <form action="" method="post">{% csrf_token %}
-            {{form.as_p}}
-            <input type="submit" value="Enviar" class="input">
-        </form>
-    </section>
+        
+        {% if valid %}
+            <h1>Enviado correctamente</h1>
+        {% endif %}
+
+            <form action="" method="post" class="{% if valid %}hidden{% endif %}">{% csrf_token %}
+                {{form.as_p}}
+                <input type="submit" value="Enviar" class="input">
+            </form>
+        
+
+        
+    </div>
 {% endblock %}

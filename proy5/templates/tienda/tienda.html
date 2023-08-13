@@ -3,8 +3,22 @@
 {% block title %}Tienda{%endblock%}
 
 {% block content %}
-<section>
-    <h1>Tienda</h1>
 
-</section>
+    <div class="contenedor-productos">
+        {% for producto in productos %}
+            <div class="productos">
+                <div class="caja-img">
+                    <img src="{{producto.imagen.url}}" alt="" class="img-producto">
+                </div>
+                <div class="info">
+                    <h1>{{producto.nombre}}</h1>
+                    <p>{{producto.categoria}}</p>
+                </div>
+
+                
+                <h4>El precio es: ${{producto.precio}}</h4>
+            </div>
+        {% endfor %}
+    </div>
+
 {% endblock %}
