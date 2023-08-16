@@ -1,0 +1,14 @@
+{% extends 'gestion/base.html' %}
+
+{% block title %}Autenticación{%endblock%}
+
+{% block content %}
+<div class="formulario">
+    <form action="" method="post">{% csrf_token %}
+        {{form}}
+        <br>
+        <button type="submit" class="btn btn-success">Login</button>
+    </form>
+</div>
+
+{% endblock %}

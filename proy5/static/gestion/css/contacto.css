@@ -15,6 +15,8 @@ form {
     padding: 30px;
     border: 2px solid #151515;
     border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #fff;
 }
 
 input, textarea {
@@ -23,4 +25,20 @@ input, textarea {
 
 .input {
     width: 30%;
+}
+
+.formulario {
+    width: 550px;
+    margin-top: 30px;
+    margin-left: auto;    
+    margin-right: auto;
+}
+
+.bienvenida {
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    justify-content: end;
+    margin-right: 60px;
 }

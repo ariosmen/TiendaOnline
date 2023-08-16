@@ -20,6 +20,24 @@
 
 <body>
     {% include 'gestion/superior/barra.html' %}
+    
+    <div class="bienvenida">
+        
+        {% if user.is_authenticated %}
+        <div>
+            Hola {{ user.username}}
+            <a href="{% url 'cerrar_sesion' %}">Cerrar sesión</a>
+        </div>
+        {% else %} 
+        <div>
+            <a href="{% url 'login' %}">Login</a>
+            <a href="{% url 'autenticacion' %}">Registrate</a>
+        </div>
+        {% endif %}
+            
+     
+    </div>
+    
 
     {% block content %} {% endblock %}
 
