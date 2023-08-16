@@ -5,7 +5,7 @@
 {% block content %}
 
     <div class="categorias">
-        <h3>Categorias: 
+        <h3>Categorias:
             {%for categoria in categorias %}
                 <a href="categoria/{{categoria.id}}">{{categoria.nombre}}</a>
             {% endfor %}

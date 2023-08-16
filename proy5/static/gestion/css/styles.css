@@ -9,46 +9,15 @@ body {
     background-size: cover;
 }
 
-.barra {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px;
-    background-color: #202020;
-}
 
-.logo {
-    width: 100px;
-}
-
-ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    gap: 20px;
-}
-
-a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.admin {
-    width: 100px;
-    padding: 0px 25px;
-}
-
-.active {
-    color: orangered;
-}
+/* LISTADO DE PRODUCTOS */
 
 .contenedor-productos {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
-    margin: 10px 30px;
+    margin: 10px 60px;
 }
 
 .productos {
@@ -59,23 +28,24 @@ a {
     padding: 10px;
     border: 2px solid #747474;
     border-radius: 20px;
-    width: 350px;
-    height: 500px;
-}
-
-.img-producto {
-    width: 100%;
-    border-radius: 20px;
-    max-height: 100%;
-    
+    width: 250px;
+    height: 400px;
+    background-color: #fff;
 }
 
 .caja-img {
     display: flex;
     align-items: center;
-    width: 300px;
+    width: 220px;
     height: 400px;
 }
+
+.img-producto {
+    width: 100%;
+    border-radius: 20px;
+
+}
+
 
 .info {
     display: flex;
@@ -83,10 +53,10 @@ a {
     text-align: center;
     flex-direction: column;
     align-items: center;
-    
 }
 
-h4 {
+.precio {
     text-align: center;
     margin-top: auto;
 }
+

@@ -1,0 +1,11 @@
+.carrito {
+    float: right;
+    text-align: right;
+    margin-right: 30px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.agregar_carrito {
+    margin: 5px;
+}

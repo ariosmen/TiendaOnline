@@ -4,6 +4,9 @@
 
 {% block content %}
 
+    <div class="carrito">
+        {% include 'carro/widget.html' %}
+    </div>
     <div class="contenedor-productos">
         {% for producto in productos %}
             <div class="productos">
@@ -11,10 +14,13 @@
                     <img src="{{producto.imagen.url}}" alt="" class="img-producto">
                 </div>
                 <div class="info">
-                    <h1>{{producto.nombre}}</h1>
+                    <h5>{{producto.nombre}}</h5>
                     <p>{{producto.categoria}}</p>
                 </div>
-                <h4>El precio es: ${{producto.precio}}</h4>
+                <p class="precio">El precio es: ${{producto.precio}}</p>
+                <div class="agregar_carrito">
+                    <a href="{% url 'carro:agregar' producto.id %}" class="btn btn-sm btn-success">Agregar al Carrito</a>
+                </div>
             </div>
         {% endfor %}
     </div>
